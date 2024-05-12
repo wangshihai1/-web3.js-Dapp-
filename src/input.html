@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>设备信息</title>
+        <style>
+     
+            .my_form {
+              border: 2px solid black;
+              padding: 10px; /* 可选的内边距样式 */
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .滑动框 {
+                border: 2px solid black;
+                padding: 10px; /* 可选的内边距样式 */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: auto;
+                border: 1px solid #000;
+                width: 300px;
+                height: 300px;
+                padding: 10px;
+                font-family: Arial, sans-serif;
+            }
+            li {
+                display: flex;
+                align-items: center;
+              }
+            body{
+                background-image: url('./images/background4.jpeg'); /* 替换为您的背景图片文件路径 */
+                background-size: cover; /* 背景图片将填充整个容器 */
+                background-repeat: no-repeat; /* 防止背景图片重复 */
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div>
+            <img src="./images/logo.jpeg" style="width: 100px;margin-top:20px;margin-left:50px;margin-bottom: 20px;">
+        </div>
+        <div style=" display: flex;flex-direction: row;justify-content: center; padding-top: 50px;padding-bottom:50px; background-color: rgba(255, 255, 255, 0.8);">
+           
+            <form class="my_form" id="message">
+                <div style="font-family: Arial, sans-serif; 
+                font-size: 16px; 
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: red;">输入设备信息</div>
+    
+                <div>
+                    <label for="input1">设备标识码：</label>
+                    <input type="text" id="input1" name="input1" placeholder="输入设备标识码"><br><br>
+                </div>
+                <div>
+                    <label for="input2">租赁状态：</label>
+                    <input type="text" id="input2" name="input2" placeholder="输入租赁状态"><br><br>
+                </div>
+                <div>
+                    <label for="input3">设备名称：</label>
+                    <input type="text" id="input3" name="input3" placeholder="输入设备名称"><br><br>
+                </div>
+              
+                <div>
+                    <label for="input4">设备型号：</label>
+                    <input type="text" id="input4" name="input4" placeholder="输入设备型号"><br><br>
+                </div>
+                
+                <div>
+                    <label for="input5">设备状态：</label>
+                    <input type="text" id="input5" name="input5" placeholder="输入设备状态"><br><br>
+                </div>
+    
+                <div>
+                    <label for="input6">生产参数：</label>
+                    <input type="text" id="input6" name="input6" placeholder="输入生产参数"><br><br>
+                </div>
+    
+                <div>
+                    <label for="input7">运输信息：</label>
+                    <input type="text" id="input7" name="input7" placeholder="输入运输信息"><br><br>
+                </div>
+    
+                <div>
+                    <label for="input8">生产日期：</label>
+                    <input type="text" id="input8" name="input8" placeholder="生产日期"><br><br>
+                </div>
+    
+                <div>
+                    <button class="btn" type="button">确定</button>
+                </div>
+    
+               
+            </form>
+            <div>
+                <div style="height: 130px;">
+                    <form class="my_form">
+                        <div style="font-family: Arial, sans-serif; 
+                            font-size: 16px; 
+                            font-weight: bold;
+                            margin-bottom: 20px;
+                            color: red;">查询设备信息</div>
+                        <div>
+                            <label for="input9">设备标识码：</label>
+                            <input type="text" id="input9" name="input9" placeholder="输入设备标识码"><br><br>
+                        </div>
+                        <div>
+                            <button class="check" type="button">查询</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="滑动框">
+                    <h2>设备信息</h2>
+                  
+                    <ul>
+                        
+                        <li >
+                            <label>设备标识码：</label>
+                            <span id="out1"></span>
+                        </li>
+                        
+                        <li >
+                            <label>租赁状态：</label>
+                            <span id="out2"></span>
+                        </li>
+
+                        <li >
+                            <label>设备名称：</label>
+                            <span id="out3"></span>
+                        </li>
+
+                        <li >
+                            <label>设备型号：</label>
+                            <span id="out4"></span>
+                        </li>
+
+                        <li >
+                            <label>设备状态：</label>
+                            <span id="out5"></span>
+                        </li>
+
+                        <li >
+                            <label>生产参数：</label>
+                            <span id="out6"></span>
+                        </li>
+                        <li >
+                            <label>运输信息：</label>
+                            <span id="out7"></span>
+                        </li>
+
+                        <li >
+                            <label>生产日期：</label>
+                            <span id="out8"></span>
+                        </li>
+                 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;justify-content: center;margin-top: 20px;padding: 10px;">
+            <button class="check_num" type="button">查询设备数量</button>
+            <div id="num" style="margin-left: 20px;">数量</div>
+        </div>
+
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/message.js"></script>
+    </body>
+</html>

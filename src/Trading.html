@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>租赁交易</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>             
+            .scroll-container {
+                width: 100%;
+                overflow-x: scroll; /* 允许横向滚动 */
+                white-space: nowrap; /* 防止文本换行 */
+                margin: 5px; /* 为项目添加外边距，可根据需要调整 */
+                border: 1px solid #252222; /* 为项目添加边框，可根据需要调整 */
+            }           
+            .scroll-content {
+                width: 210px;
+                flex-wrap: nowrap; /* 取消自动换行 */
+                display: flex; /* 使用 Flex 布局 */
+            } 
+            .trading {
+            min-width: 210px;              
+            width: 210px;
+            border: 1px solid #ccc; /* 为项目添加边框，可根据需要调整 */
+            }
+            .my_form {
+                border: 2px solid black;
+                padding: 10px; /* 可选的内边距样式 */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            body{
+                background-image: url('./images/background4.jpeg'); /* 替换为您的背景图片文件路径 */
+                background-size: cover; /* 背景图片将填充整个容器 */
+                background-repeat: no-repeat; /* 防止背景图片重复 */
+            }
+        </style>
+      </head>
+      <body>
+        
+        <div style=" background-color: rgba(255, 255, 255, 0.8);">
+            <div>
+                <h1 class="text-center">租赁列表</h1>
+                <!-- <br/> -->
+            </div>
+
+            <!-- 装载租赁信息的容器 -->
+            <div class="scroll-container" id="container">
+                <div class="scroll-content" id="content">
+
+                </div>  
+            </div>
+
+        </div>
+
+          
+
+            <!-- 一个租赁订单模板 -->
+            <div class="trading" id="tradingTemplate" style="display: none; min-width: 210px;width: 210px;border: 1px solid #ccc;flex: 1; /* 平均分配宽度 */">                    
+                <div class="panel panel-default panel-pet">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">租赁订单</h3>
+                    </div>
+                    <div class="panel-body" style="width: 210px;">
+                        <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="./images/1.jpeg" data-holder-rendered="true">
+                        <!-- <img alt="140x140"  class="img-rounded img-center" style="width: 100%;" src="./images/1.jpeg" data-holder-rendered="true"> -->                       
+                        <br/><br/>
+                        <!-- <strong>设备名称</strong>: <span class="pet-breed">Golden Retriever</span><br/> -->
+                        <strong>设备名称</strong>: <span id="name">Golden Retriever</span><br/>
+
+                        <strong>租赁数量</strong>: <span id="num">3</span><br/>
+                        <strong>租赁期限</strong>: <span id="period">Warren, MI</span><br/>
+                        <strong>付息周期</strong>: <span id="cycle">3</span><br/>
+                        <strong>租金</strong>: <span id="rent">3</span><br/>
+                        <div style="  display: flex;  align-items: center; padding-left: 65px;">
+                            <button class="accept" type="button" data-id="0">接单</button>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+
+        <div style=" background-color: rgba(255, 255, 255, 0.8);">
+            <div>
+                <h1 class="text-center">发布订单</h1>
+                <!-- <br/> -->
+            </div>
+            <div style=" display: flex;flex-direction: row;justify-content: center; padding-top: 8px;">
+                <form class="my_form" id="trading_message">
+                    <div style="font-family: Arial, sans-serif; 
+                    font-size: 16px; 
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    color: blue;">输入订单信息</div>
+        
+                    <div>
+                        <label for="input1">承租公司：</label>
+                        <input type="text" id="input1" name="input1" placeholder="输入公司名称"><br><br>
+                    </div>
+                    <div>
+                        <label for="input2">设备名称：</label>
+                        <input type="text" id="input2" name="input2" placeholder="输入设备名称"><br><br>
+                    </div>
+                    <div>
+                        <label for="input3">租赁数量：</label>
+                        <input type="text" id="input3" name="input3" placeholder="输入租赁数量"><br><br>
+                    </div>
+                
+                    <div>
+                        <label for="input4">租赁期限：</label>
+                        <input type="text" id="input4" name="input4" placeholder="输入租赁期限（月）"><br><br>
+                    </div>
+                    
+                    <div>
+                        <label for="input5">付息周期：</label>
+                        <input type="text" id="input5" name="input5" placeholder="输入付息周期（月）"><br><br>
+                    </div>
+        
+                    <div>
+                        <label for="input6">每期租金：</label>
+                        <input type="text" id="input6" name="input6" placeholder="输入每期租金（元）"><br><br>
+                    </div>
+        
+                    <div>
+                        <button class="btn" id="submit" type="button">发布订单</button>
+                    </div>
+        
+                
+                </form>
+            </div>
+
+        </div>
+        <div id="information"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- <!-- Include all compiled plugins (below), or include in     -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/trading.js"></script>
+      </body>
+</html>

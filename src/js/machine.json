@@ -1,0 +1,40 @@
+[
+    {
+        "name":"自动化点胶机",
+        "picture":"./images/1.jpeg",
+        "num":4,
+        "period":"5年",
+        "cycle":"每月",
+        "rent":"1000元"
+
+    },
+    {
+        "name":"抓取机器人",
+        "picture":"./images/2.jpeg",
+        "num":4,
+        "period":"3年",
+        "cycle":"每月",
+        "rent":"500元"
+
+    },
+    {
+        "name":"金属检测仪",
+        "picture":"./images/3.jpeg",
+        "num":1,
+        "period":"7年",
+        "cycle":"每年",
+        "rent":"10000元"
+
+    },
+    {
+        "name":"3D打印机",
+        "picture":"./images/4.jpeg",
+        "num":2,
+        "period":"10年",
+        "cycle":"每月",
+        "rent":"300元"
+
+    }
+
+
+]

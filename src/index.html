@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>主页</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body{
+            background-image: url('./images/background4.jpeg'); /* 替换为您的背景图片文件路径 */
+            background-size: cover; /* 背景图片将填充整个容器 */
+            background-repeat: no-repeat; /* 防止背景图片重复 */
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            padding-top: 50px;
+            padding-bottom:50px; 
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            height: auto;
+        }
+        .big_container{
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            height: auto;
+
+            text-align: center;
+
+        }
+        .custom-button {
+            background-color: #44a6e2; /* 按钮背景颜色 */
+            color: white; /* 文字颜色 */
+            padding: 10px 20px; /* 按钮内边距 */
+            border: none; /* 去掉边框 */
+            border-radius: 5px; /* 圆角边框 */
+            font-size: 16px; /* 文字大小 */
+            cursor: pointer; /* 鼠标样式 */
+        }
+
+        /* 鼠标悬停时的按钮样式 */
+        .custom-button:hover {
+            background-color: #29b963; /* 鼠标悬停时的背景颜色 */
+        }
+
+        .template {
+            border: 1px solid #ccc;
+            background-color: #44bfe4;         
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .ti{
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .payment-button button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .information{
+            font-size: 12px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .trading_list{
+            width: 100%;
+            height: 300px;
+            background-color: rgba(245, 247, 245, 0.8);
+            overflow-x: scroll; /* 允许横向滚动 */
+            white-space: nowrap; /* 防止文本换行 */
+            border-radius: 20px;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+        <img src="./images/logo.jpeg" style="width: 100px;margin-top:20px;margin-left:50px;margin-bottom: 10px;">
+    </div>
+    <div class="big_container">
+        <h1 class="text-center">海洋租赁</h1>
+        <div class="container" style="background-image: url('./images/background5.jpeg');background-size: cover;background-repeat: no-repeat;">
+            
+            <button class="custom-button" style="margin: 10px;">
+                <a href="./input.html" style="color: white;">设备信息</a>
+            </button>
+            <button class="custom-button" style="margin: 10px;">
+                <a href="./Trading.html" style="color: white;">租赁交易</a>
+            </button>
+            <!-- <button class="custom-button" style="margin: 10px;">
+                <a href="./pay.html" style="color: white;">租金支付</a>
+            </button> -->
+
+    
+        </div>
+        <div style="width: 840px;width: 100%; display: flex;justify-content: center;align-items: center;margin-top:10px;">
+            <div class="trading_list" id="trading_box">
+
+            </div>
+        </div>
+        <div id="success" style="display: none;height:50px;font-size:17px;margin-top:20px">本期租金支付成功!（以1以太币=21090元人民币汇率计算）</div>
+        <div id="fail" style="display: none;height:50px;font-size:17px;margin-top:20px">未到达租金支付时间</div>
+        
+    </div>
+
+    <!-- <div class="template"> -->
+    <div class="template" id="template1" style="display: none;">
+        <div style="background-color: rgb(255, 255, 255);margin:10px;border-radius: 10px;">
+            <h2 style="font-size: 18px;font-weight: bold;">待支付订单</h2>
+            <div style=" margin-top:10px;text-align: left;">
+                <div class="information" id="1"></div>
+                <div class="information" id="2"></div>
+                <div class="information" id="3"></div>
+                <div class="information" id="4"></div>
+                <div class="information" id="5"></div>
+            </div>
+            <div class="payment-button" >
+                <button class="pay_button" style="border-radius: 10px;">支付</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <!-- Include all compiled plugins (below), or include in     -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/pay.js"></script>
+
+  </body>
+</html>

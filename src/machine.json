@@ -1,0 +1,83 @@
+[
+    {
+      
+        "name":"自动化点胶机",
+        "picture":"./images/1.jpeg",
+        "num":4,
+        "period":"5年",
+        "cycle":"每1月",
+        "rent":"1000元"
+
+    },
+    {
+       
+        "name":"抓取机器人",
+        "picture":"./images/2.jpeg",
+        "num":4,
+        "period":"3年",
+        "cycle":"每1月",
+        "rent":"500元"
+
+    },
+    {
+        "name":"金属检测仪",
+        "picture":"./images/3.jpeg",
+        "num":1,
+        "period":"7年",
+        "cycle":"每1年",
+        "rent":"10000元"
+
+    },
+    {
+        "name":"3D打印机",
+        "picture":"./images/4.jpeg",
+        "num":2,
+        "period":"10年",
+        "cycle":"每1月",
+        "rent":"300元"
+
+    },
+    {
+       
+        "name":"数控车床",
+        "picture":"./images/5.jpeg",
+        "num":10,
+        "period":"3年",
+        "cycle":"每2月",
+        "rent":"1000元"
+
+    },
+    {
+       
+        "name":"硫化机",
+        "picture":"./images/6.jpeg",
+        "num":3,
+        "period":"5年",
+        "cycle":"每6年",
+        "rent":"10000元"
+
+    },
+    {
+       
+        "name":"智能控制柜",
+        "picture":"./images/7.jpeg",
+        "num":1,
+        "period":"10年",
+        "cycle":"每2年",
+        "rent":"15000元"
+
+    },
+    {
+       
+        "name":"挖掘机",
+        "picture":"./images/8.jpeg",
+        "num":8,
+        "period":"4年",
+        "cycle":"每2月",
+        "rent":"10000元"
+
+    }
+ 
+
+
+]

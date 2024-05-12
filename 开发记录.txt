@@ -1,0 +1,83 @@
+
+智能合约的函数实现的功能不同，调用时的需求也不同，涉及对合约状态修改的函数，需要用户的地址
+
+每次更改了合约，使用这两行指令强制清除以前的缓存，所有合约全部重新编译部署
+truffle migrate --reset --all
+truffle compile --reset --all
+npm run dev
+
+asdfgdfg
+true
+aSDFG
+asdfsfghf
+8
+1345
+dfghj
+1234
+
+
+   {
+       
+        "name":"清洗分级滚筒",
+        "picture":"./images/9.jpeg",
+        "num":2,
+        "period":"8年",
+        "cycle":"每年",
+        "rent":"20000元"
+
+    }
+
+
+在设置横向滚动的滑动窗口时，需要用到两个div容器：
+1.            .scroll-container {
+                width: 100%;
+                overflow-x: scroll; /* 允许横向滚动 */
+                white-space: nowrap; /* 防止文本换行 */
+            }       
+	该容器允许横向滚动，实现底端的拖动条
+
+2.            .scroll-content {
+                width: 200px;/*这个宽度应该等于内部装载的item元素的宽度，因为item元素会自动去把容器填满，如果该容器宽度为400，item的宽度为200，则item会自动变成400*/
+
+	/*只有当item数量足够多，所有item宽度加起来>width时，item的宽度才不会去自动适应该容器的宽度
+                flex-wrap: nowrap; /* 取消自动换行 ，内部装的item都会横向排列*/
+                display: flex; /* 使用 Flex 布局 */
+            } 
+当item的数量足够多，宽度之和大于scroll-container 后，会出现横向滑动效果
+
+
+外部调用智能合约可以传入全局变量
+const Web3 = require('web3');
+const web3 = new Web3('your Ethereum node URL'); // 替换为你的以太坊节点URL
+
+const senderAddress = '0xYourSenderAddress'; // 发送者地址
+const recipientAddress = '0xYourRecipientAddress'; // 接收者地址
+const amountInWei = web3.utils.toWei('1', 'ether'); // 1以太币，以wei为单位
+
+const transactionObject = {
+    from: senderAddress,
+    to: recipientAddress,
+    value: amountInWei,
+};
+
+web3.eth.sendTransaction(transactionObject)
+    .then(receipt => {
+        console.log('Transaction receipt:', receipt);
+    })
+    .catch(error => {
+        console.error('Transaction error:', error);
+});
+
+
+
+用户发布订单时，时间是以月为单位，需要两个转换函数，一个是将智能合约的时间戳转换成人类可以看懂的时间，另一个是将月为单位的时间转换成以秒为单位的时间，
+用于作为智能合约中的时间参数
+
+
+pya.js 46行，遍历支付订单列表时，get_transfer函数是异步的，它里面的回调函数将会在get_transfer执行成功之后才执行，因此，回调函数内部的i,并不是实时的等于
+for循环中的i，当回调函数被执行时，for循环中的i可能已经等于num并且跳出循环了，因此，需要增加一个变量id，使得这个id可以跟get_transfer函数中的i保持同步
+
+
+人民币和以太币汇率：
+1以太币=21090元人民币
+

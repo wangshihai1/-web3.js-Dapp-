@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>租金支付</title>
+        <style>
+            body{
+                background-image: url('./images/background4.jpeg'); /* 替换为您的背景图片文件路径 */
+                background-size: cover; /* 背景图片将填充整个容器 */
+                background-repeat: no-repeat; /* 防止背景图片重复 */ 
+                         
+            }
+            .big_box{
+                width: 90%;
+                text-align: right;
+                background-color: #e6f4f5;
+                border-radius: 20px;
+            }
+            .template {
+                border: 1px solid #ccc;
+                background-color: #44bfe4;         
+                width: 300px;
+                text-align: center;
+                border-radius: 10px;
+                margin: 10px;
+                display: inline-block;
+            }
+            .ti{
+                font-size: 12px;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            .payment-button button {
+                margin-top: 20px;
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .information{
+                font-size: 12px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            .trading_list{
+                width: 840px;
+                height: 300px;
+                text-align: center;
+                background-color: rgba(245, 247, 245, 0.8);
+                overflow-x: scroll; /* 允许横向滚动 */
+                white-space: nowrap; /* 防止文本换行 */
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="./images/logo.jpeg" style="width: 100px;margin-top:20px;margin-left:50px;margin-bottom: 20px;">
+        </div>
+        <div style="display: flex;align-items: center;margin-left:150px;border-radius: 10px;">
+            <div class="big_box">
+                <!-- <div style="width: 500px;height:800px">11</div> -->
+                <div class="trading_list">
+                    <div class="template" >
+                        <div style="background-color: rgb(255, 255, 255);margin:10px;border-radius: 10px;">
+                            <h2 style="font-size: 18px">待支付订单</h2>
+                            <div style=" margin-top:10px;text-align: left;">
+                                <div class="information" id="1"><span class="ti">租金:</span>200元</div>
+                                <div class="information" id="2"><span class="ti">设备名称:</span>2</div>
+                                <div class="information" id="3"><span class="ti">租赁数量:</span>2</div>
+                                <div class="information" id="4"><span class="ti">上次付息时间:</span>2023年9月10日</div>
+                                <div class="information" id="5"><span class="ti">下次付息时间:</span>2023年10月10日</div>
+                            </div>
+                            <div class="payment-button" >
+                                <button style="border-radius: 10px;" data-id="0">支付</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template">
+                        <div style="background-color: rgb(255, 255, 255);margin:10px;border-radius: 10px;">
+                            <h2 style="font-size: 18px">待支付订单</h2>
+                            <div style=" margin-top:10px;text-align: left;">
+                                <div class="information" id="1"><span class="ti">租金:</span>200元</div>
+                                <div class="information" id="2"><span class="ti">设备名称:</span>2</div>
+                                <div class="information" id="3"><span class="ti">租赁数量:</span>2</div>
+                                <div class="information" id="4"><span class="ti">上次付息时间:</span>2023年9月10日</div>
+                                <div class="information" id="5"><span class="ti">下次付息时间:</span>2023年10月10日</div>
+                            </div>
+                            <div class="payment-button" >
+                                <button style="border-radius: 10px;">支付</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template">
+                        <div style="background-color: rgb(255, 255, 255);margin:10px;border-radius: 10px;">
+                            <h2 style="font-size: 18px">待支付订单</h2>
+                            <div style=" margin-top:10px;text-align: left;">
+                                <div class="information" id="1"><span class="ti">租金:</span>200元</div>
+                                <div class="information" id="2"><span class="ti">设备名称:</span>2</div>
+                                <div class="information" id="3"><span class="ti">租赁数量:</span>2</div>
+                                <div class="information" id="4"><span class="ti">上次付息时间:</span>2023年9月10日</div>
+                                <div class="information" id="5"><span class="ti">下次付息时间:</span>2023年10月10日</div>
+                            </div>
+                            <div class="payment-button" >
+                                <button style="border-radius: 10px;">支付</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="template"> -->
+        <div class="template" style="display: none;">
+            <div style="background-color: rgb(255, 255, 255);margin:10px;border-radius: 10px;">
+                <h2 style="font-size: 18px">待支付订单</h2>
+                <div style=" margin-top:10px;text-align: left;">
+                    <div class="information" id="1"><span class="ti">租金:</span>200元</div>
+                    <div class="information" id="2"><span class="ti">设备名称:</span>2</div>
+                    <div class="information" id="3"><span class="ti">租赁数量:</span>2</div>
+                    <div class="information" id="4"><span class="ti">上次付息时间:</span>2023年9月10日</div>
+                    <div class="information" id="5"><span class="ti">下次付息时间:</span>2023年10月10日</div>
+                </div>
+                <div class="payment-button" >
+                    <button style="border-radius: 10px;">支付</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- <!-- Include all compiled plugins (below), or include in     -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/pay.js"></script>
+    </body>
+</html>

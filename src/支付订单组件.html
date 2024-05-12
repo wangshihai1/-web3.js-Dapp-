@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .template {
+            border: 1px solid #ccc;
+            background-color: #44bfe4;         
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+        .ti{
+            font-size: 10px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .payment-button button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .information{
+            font-size: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="template">
+        <div style="background-color: rgb(255, 255, 255);margin:10px;border-radius: 10px;">
+            <h2 style="font-size: 15px">待支付订单</h2>
+            <div style=" margin-top:10px;text-align: left;">
+                <div class="information" id="1"><span class="ti">租金:</span>200元</div>
+                <div class="information" id="2"><span class="ti">设备名称:</span>2</div>
+                <div class="information" id="3"><span class="ti">租赁数量:</span>2</div>
+                <div class="information" id="4"><span class="ti">上次付息时间:</span>2023年9月10日</div>
+                <div class="information" id="5"><span class="ti">下次付息时间:</span>2023年10月10日</div>
+            </div>
+            <div class="payment-button" >
+                <button style="border-radius: 10px;">支付</button>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <script>
+        function pay() {
+            // 添加支付逻辑，可以在此处调用支付接口或相关函数
+            alert("支付成功！");
+        }
+    </script> -->
+</body>
+</html>
