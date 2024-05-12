@@ -53,8 +53,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -162,8 +161,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -176,8 +174,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_symbol\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"lease\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_equipment_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_Model_number\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_status\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_Production_parameter\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_Transportation_information\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_date\",\"type\":\"string\"}],\"name\":\"addMachine\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"equipments\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"symbol\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"is_leased\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"equipment_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"Model_number\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"status\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"Production_parameter\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"Transportation_information\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"get_equipment_Count\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_symbol\",\"type\":\"string\"}],\"name\":\"get_equipment_message\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Storage.sol\":\"Storage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Storage.sol\":{\"keccak256\":\"0xe60822173cdafac0ec59b8ee4c28bd4a20b54c8e854a0922cd537501f08daa9e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://42299ab7b28c4bfdf94ca1ce898d9fecc19147675075b96d751ad76f0a99fe00\",\"dweb:/ipfs/QmWLt5ne2GUFB6zhTC1nmv9zukS96sUP68nFrcXhf9NbJW\"]}},\"version\":1}",
@@ -7356,13 +7353,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xbd7A0Cf8F18Ff01713261ACd33EE8E84103F333B",
-      "transactionHash": "0x99b4e1d75a43589ead80172b69803d7c2ac0976f82dce13d8b82233e27079888"
+      "address": "0x218E9Cacd14e505BB04236F19542B86D918295B5",
+      "transactionHash": "0x928b98a7bf25dccc799cda240d9ef904c74026cb02317f89c3bb526a530764eb"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-03-06T07:20:25.558Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-05-12T12:15:38.309Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

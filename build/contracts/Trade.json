@@ -58,8 +58,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -123,8 +122,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -178,8 +176,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"index\",\"type\":\"int256\"}],\"name\":\"accept\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"company_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"eqm_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"eqm_num\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"period\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"cycle\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"rent\",\"type\":\"string\"}],\"name\":\"addTrading\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"index\",\"type\":\"int256\"}],\"name\":\"get_trading\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"tradings\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"company_address\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"company_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"eqm_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"eqm_num\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"period\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"cycle\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"rent\",\"type\":\"string\"},{\"internalType\":\"int256\",\"name\":\"used\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Trade.sol\":\"Trade\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Trade.sol\":{\"keccak256\":\"0x1173558e3d78d2575e18890f4600e7d727ca86e6808ea64cf242cba34260737c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e2de846222425eb55f5a74dbacb0a1211cd290b5eea4d3f669802be6d3f25f33\",\"dweb:/ipfs/QmUi78wCremCRqsXuM3gP3sLmhfw5D21QtTfkYjePBK1N3\"]}},\"version\":1}",
@@ -8415,13 +8412,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xB35baa05731ab16B8f15A1DF7A6be626DDc02658",
-      "transactionHash": "0x1c3c2f75d4ea48bfd2abaf04c627a7af5c2c107196374bb9882c5cfb5c5a22e5"
+      "address": "0x2E5209443F338453ADc65a77C4207934f78Ce44B",
+      "transactionHash": "0xcd9d85389b4248570aa1366ab398b3c25e7605d99b8ce2716a9463038bb9e7d5"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-03-06T07:20:25.562Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-05-12T12:15:38.317Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -48,8 +48,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -101,8 +100,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -146,8 +144,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -160,8 +157,7 @@
       "name": "sendFunds",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"Trans_list\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"eq_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"eq_num\",\"type\":\"string\"},{\"internalType\":\"int256\",\"name\":\"transferAmount\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"lastTransferTimestamp\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"transferInterval\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"eq_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"eq_num\",\"type\":\"string\"},{\"internalType\":\"int256\",\"name\":\"transferAmount\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"transferInterval\",\"type\":\"int256\"}],\"name\":\"addTransfer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"get_length\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"index\",\"type\":\"int256\"}],\"name\":\"get_transfer\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"index\",\"type\":\"int256\"}],\"name\":\"sendFunds\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/TimedTrans.sol\":\"TimedTrans\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/TimedTrans.sol\":{\"keccak256\":\"0x34aa11900606bdde2f442084ca800a9c1ee92d34e5d376f5f9f095b20c87b296\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://78930768e202b2016a3e1a97aa4d19446d9b1fc9c3226821a6ce5bef958827bb\",\"dweb:/ipfs/QmT4kaBsm2b8s9oaaYnQxoHa19W7GCnkycBcT7p4gAVqM5\"]}},\"version\":1}",
@@ -8805,13 +8801,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xF2292F167B5b9464a759A29FF17aBbe1Cd32e0ee",
-      "transactionHash": "0x9390f81a44f5750c5958465c1e9c146a59a6e3a79fe903c0ef73bc64a4148547"
+      "address": "0x1a7d5B74bAdb874192f0ac1456822c63b8b04e43",
+      "transactionHash": "0x71a373c1a072b17be5f548fb05004d1d1b1f5ca4d35ccc3caa4a087014b09a90"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-03-06T07:20:25.568Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-05-12T12:15:38.313Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
